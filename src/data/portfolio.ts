@@ -13,10 +13,10 @@ export type Project = {
 
 export const portfolio = {
   personal: {
-    Name: 'BHARATHRAJA',
+    name: 'BHARATHRAJA',
     initials: 'S',
     Role: 'Engineering Student',
-    Email: 'bharathraja1113@gmail.com',
+    email: 'bharathraja1113@gmail.com',
     github: 'https://github.com/username',
     linkedin: 'https://linkedin.com/in/username',
     location: 'Chennai, India',
@@ -24,10 +24,10 @@ export const portfolio = {
     bio: 'I am an Engineering student who enjoys turning complex problems into practical, reliable software. My interests sit at the intersection of product engineering, backend systems, and thoughtful user experiences.',
   },
   education: {
-    College: '[UNIVERSITY NAME]',
-    Degree: 'B.Tech / B.TECH. in Information Technology',
-    Duration: '2025 — 2029',
-    Details: 'Add your coursework, academic interests, certifications, or GPA here when ready.',
+    college: '[UNIVERSITY NAME]',
+    degree: 'B.Tech / B.TECH. in Information Technology',
+    duration: '2025 — 2029',
+    details: 'Add your coursework, academic interests, certifications, or GPA here when ready.',
   },
   coursework: ['Data Structures & Algorithms', 'Database Management Systems', 'Operating Systems', 'Computer Networks', 'Software Engineering'],
   skills: [
