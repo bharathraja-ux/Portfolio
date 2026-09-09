@@ -14,7 +14,7 @@ export type Project = {
 export const portfolio = {
   personal: {
     name: 'BHARATHRAJA',
-    initials: 'S',
+    initials: 'B',
     role: 'Engineering Student',
     email: 'bharathraja1113@gmail.com',
     github: 'https://github.com/username',
