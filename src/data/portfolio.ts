@@ -13,7 +13,7 @@ export type Project = {
 
 export const portfolio = {
   personal: {
-    name: 'BHARATHRAJA',
+    name: 'BHARATHRAJA S',
     initials: 'B',
     role: 'Engineering Student',
     email: 'bharathraja1113@gmail.com',
