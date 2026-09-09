@@ -25,7 +25,7 @@ export const portfolio = {
   },
   education: {
     school: 'Sri Sairam Engineering College, Chennai',
-    degree: 'B.Tech / B.TECH. in Information Technology',
+    degree: 'B.Tech in Information Technology',
     duration: '2025 — 2029',
     details: 'Add your coursework, academic interests, certifications, or GPA here when ready.',
   },
