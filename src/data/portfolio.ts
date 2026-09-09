@@ -24,7 +24,7 @@ export const portfolio = {
     bio: 'I am an Engineering student who enjoys turning complex problems into practical, reliable software. My interests sit at the intersection of product engineering, backend systems, and thoughtful user experiences.',
   },
   education: {
-    school: '[UNIVERSITY NAME]',
+    school: 'Sri Sairam Engineering College, Chennai',
     degree: 'B.Tech / B.TECH. in Information Technology',
     duration: '2025 — 2029',
     details: 'Add your coursework, academic interests, certifications, or GPA here when ready.',
