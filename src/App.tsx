@@ -17,7 +17,7 @@ function SectionIntro({ index, eyebrow, title, detail }: { index: string; eyebro
 }
 
 function Terminal() {
-  return <div className="terminal" aria-label="Developer terminal status"><div className="terminal-bar"><span className="terminal-dots"><i /><i /><i /></span><span>developer@portfolio:~</span><span className="terminal-status">● online</span></div><div className="terminal-body"><p><b>$ whoami</b></p><p className="terminal-value">engineering_student<span className="cursor">_</span></p><p><b>$ focus</b></p><p className="terminal-value">software · systems · learning</p><p><b>$ status</b></p><p className="terminal-value green"><Check size={13} /> available for opportunities</p></div></div>
+  return <div className="terminal" aria-label="Developer terminal status"><div className="terminal-bar"><span className="terminal-dots"><i /><i /><i /></span><span>developer@portfolio:~</span><span className="terminal-status">● online</span></div><div className="terminal-body"><p><b>$ who am i</b></p><p className="terminal-value">engineering_student<span className="cursor">_</span></p><p><b>$ focus</b></p><p className="terminal-value">software · systems · learning</p><p><b>$ status</b></p><p className="terminal-value green"><Check size={13} /> available for opportunities</p></div></div>
 }
 
 function ProjectCard({ project, onDetails, featured = false }: { project: Project; onDetails: () => void; featured?: boolean }) {
