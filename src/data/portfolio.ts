@@ -20,7 +20,7 @@ export const portfolio = {
     github: 'https://github.com/bharathraja-ux',
     linkedin: 'https://www.linkedin.com/in/bharathraja-s-757261384',
     location: 'Chennai, India',
-    resume: '/Portfolio/public/resume.pdf',
+    resume: '/resume.pdf',
     bio: 'I am an Engineering student who enjoys turning complex problems into practical, reliable software. My interests sit at the intersection of product engineering, backend systems, and thoughtful user experiences.',
   },
   education: {
