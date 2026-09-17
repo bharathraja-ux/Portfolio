@@ -44,17 +44,17 @@ export const portfolio = {
   ],
   projects: [
     {
-      title: 'Your featured project',
-      eyebrow: 'PROJECT 01 / CASE STUDY',
-      description: 'A concise description of the product, the people it serves, and the experience you created.',
-      problem: 'Describe the specific user or engineering problem this project addresses.',
-      solution: 'Explain the product approach and the technical choices that made the solution useful.',
-      stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
+      title: 'CropSense',
+      eyebrow: 'PROJECT 01 / CropSense',
+      description: "CropSense is an installable Progressive Web App that lets a farmer photograph a crop leaf and get back, in seconds, a disease diagnosis, a visual explanation of that diagnosis, organic and chemical treatment options, and a weather-adjusted forecast of how much yield they stand to lose if the disease goes untreated. It's built for smallholder farmers and agribusinesses working in low-connectivity rural areas, with full offline support and localization in English, Tamil, and Hindi so the tool is usable in the fields where it's needed, not just at a desk.",
+      problem: "Smallholder farmers routinely lose yield to leaf diseases that are treatable if caught early — but accurate diagnosis usually requires an agricultural extension officer or a lab test, neither of which is fast, cheap, or accessible in rural areas. Even when a farmer suspects a problem, they're left without a clear next step: which treatment to use, at what dosage, and how urgent the situation actually is given the week's weather. Existing tools either assume reliable internet access or stop at \"here's a disease name,\" leaving the harder question — what do I do now, and what's it going to cost me — unanswered.",
+      solution: "CropSense turns a leaf photo into a full decision: a Python FastAPI microservice runs the image through a CNN-based classifier and generates a Grad-CAM heatmap so the diagnosis is visually explainable rather than a black box, not just a label. That result is combined server-side with live OpenWeatherMap data to run a yield-impact model — factoring in disease severity, humidity, rainfall, and temperature — that projects loss percentage both untreated and treated, so the farmer can see what a treatment is actually worth. The app then surfaces matched organic and chemical treatment plans with dosage, application steps, and safety/pre-harvest-interval guidance.Because the target users often have patchy connectivity, the frontend is offline-first: scans queue in IndexedDB and auto-sync once a connection returns, and every screen has an explicit offline state rather than a spinner or a broken layout. On the backend, the architecture was designed to evolve — starting as a PyTorch prototype with a local-storage fallback for zero-downtime demos, then hardened into a production path using ONNX Runtime for lightweight cross-platform inference, an out-of-distribution filter to reject non-leaf images, confidence calibration that flags low-confidence results for agronomist review, and S3-compatible object storage with image optimization so uploads don't erode storage or bandwidth on rural connections.",
+      stack: ['React+vite+Tailwind-CSS', 'TypeScript', 'Node.js+Express', 'PostgreSQL', 'Python+FastAPI+uvicorn'],
       highlights: ['Responsive frontend', 'REST API architecture', 'Thoughtful data modeling'],
       accent: '#3b82f6',
       github: 'https://github.com/username',
       demo: '#contact',
     },
-    
+
   ] as Project[],
 } as const
